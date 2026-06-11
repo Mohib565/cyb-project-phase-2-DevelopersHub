@@ -1,8 +1,4 @@
-```python
-# Let's generate a complete, professional, and visually stunning README.md file content 
-# as requested by the user for his Phase 2 submission (Weeks 4-6).
-
-readme_content = """# Advanced Security Hardening, Ethical Hacking & Secure Deployment (Phase 2)
+ Advanced Security Hardening, Ethical Hacking & Secure Deployment (Phase 2)
 
 **Intern Name:** Syed Mohib Ali Shah  
 **Intern ID:** DHC-495  
