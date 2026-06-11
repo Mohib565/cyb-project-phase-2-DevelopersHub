@@ -1,0 +1,81 @@
+# Nmap 7.99 scan initiated Thu Jun  4 15:59:01 2026 as: nmap -sV -sC -p 3000 -oN recon_nmap.txt localhost
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000022s latency).
+Other addresses for localhost (not scanned): ::1
+
+PORT     STATE SERVICE VERSION
+3000/tcp open  ppp?
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Vary: Origin, Accept-Encoding
+|     Access-Control-Allow-Credentials: true
+|     Content-Security-Policy: default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';img-src 'self' data:;connect-src 'self';font-src 'self';object-src 'none';frame-src 'none'
+|     X-DNS-Prefetch-Control: off
+|     Expect-CT: max-age=0
+|     X-Frame-Options: DENY
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|     X-Download-Options: noopen
+|     X-Content-Type-Options: nosniff
+|     X-Permitted-Cross-Domain-Policies: none
+|     Referrer-Policy: no-referrer
+|     X-XSS-Protection: 0
+|     Feature-Policy: payment 'self'
+|     X-Recruiting: /#/jobs
+|     Accept-Ranges: bytes
+|     Cache-Control: public, max-age=0
+|     Last-Modified: Thu, 04 Jun 2026 10:31:44 GMT
+|     ETag: W/"124fa-19e92305fb1"
+|     Content-Type: text/html; charset=UTF-8
+|     Content-Length: 75002
+|     Date: Thu, 04 Jun 2026 10:59:13 GMT
+|     Connection: close
+|     <!--
+|     Copyright
+|   HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 204 No Content
+|     Vary: Origin
+|     Access-Control-Allow-Credentials: true
+|     Access-Control-Allow-Methods: GET,POST,PUT,DELETE,PATCH
+|     Access-Control-Allow-Headers: Content-Type,Authorization
+|     Content-Length: 0
+|     Date: Thu, 04 Jun 2026 10:59:13 GMT
+|     Connection: close
+|   Help, NCP, RPCCheck: 
+|     HTTP/1.1 400 Bad Request
+|_    Connection: close
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3000-TCP:V=7.99%I=7%D=6/4%Time=6A215A81%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,10372,"HTTP/1\.1\x20200\x20OK\r\nVary:\x20Origin,\x20Accept-Enc
+SF:oding\r\nAccess-Control-Allow-Credentials:\x20true\r\nContent-Security-
+SF:Policy:\x20default-src\x20'self';script-src\x20'self';style-src\x20'sel
+SF:f'\x20'unsafe-inline';img-src\x20'self'\x20data:;connect-src\x20'self';
+SF:font-src\x20'self';object-src\x20'none';frame-src\x20'none'\r\nX-DNS-Pr
+SF:efetch-Control:\x20off\r\nExpect-CT:\x20max-age=0\r\nX-Frame-Options:\x
+SF:20DENY\r\nStrict-Transport-Security:\x20max-age=31536000;\x20includeSub
+SF:Domains;\x20preload\r\nX-Download-Options:\x20noopen\r\nX-Content-Type-
+SF:Options:\x20nosniff\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nRe
+SF:ferrer-Policy:\x20no-referrer\r\nX-XSS-Protection:\x200\r\nFeature-Poli
+SF:cy:\x20payment\x20'self'\r\nX-Recruiting:\x20/#/jobs\r\nAccept-Ranges:\
+SF:x20bytes\r\nCache-Control:\x20public,\x20max-age=0\r\nLast-Modified:\x2
+SF:0Thu,\x2004\x20Jun\x202026\x2010:31:44\x20GMT\r\nETag:\x20W/\"124fa-19e
+SF:92305fb1\"\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nContent-L
+SF:ength:\x2075002\r\nDate:\x20Thu,\x2004\x20Jun\x202026\x2010:59:13\x20GM
+SF:T\r\nConnection:\x20close\r\n\r\n<!--\n\x20\x20~\x20Copyright")%r(Help,
+SF:2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n"
+SF:)%r(NCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\
+SF:r\n\r\n")%r(HTTPOptions,10F,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:
+SF:\x20Origin\r\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Contr
+SF:ol-Allow-Methods:\x20GET,POST,PUT,DELETE,PATCH\r\nAccess-Control-Allow-
+SF:Headers:\x20Content-Type,Authorization\r\nContent-Length:\x200\r\nDate:
+SF:\x20Thu,\x2004\x20Jun\x202026\x2010:59:13\x20GMT\r\nConnection:\x20clos
+SF:e\r\n\r\n")%r(RTSPRequest,10F,"HTTP/1\.1\x20204\x20No\x20Content\r\nVar
+SF:y:\x20Origin\r\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Con
+SF:trol-Allow-Methods:\x20GET,POST,PUT,DELETE,PATCH\r\nAccess-Control-Allo
+SF:w-Headers:\x20Content-Type,Authorization\r\nContent-Length:\x200\r\nDat
+SF:e:\x20Thu,\x2004\x20Jun\x202026\x2010:59:13\x20GMT\r\nConnection:\x20cl
+SF:ose\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConn
+SF:ection:\x20close\r\n\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jun  4 15:59:14 2026 -- 1 IP address (1 host up) scanned in 12.42 seconds

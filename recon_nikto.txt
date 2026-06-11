@@ -1,0 +1,29 @@
+- Nikto v2.6.0
+---------------------------------------------------------------------------
++ Target IP:          127.0.0.1
++ Target Hostname:    localhost
++ Target Port:        3000
++ Platform:           Unknown
++ Start Time:         2026-06-04 16:15:37 (GMT5)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ ERROR: Failed to check for updates: 403
++ [999100] /: Uncommon header(s) 'x-recruiting' found, with contents: /#/jobs.
++ No CGI Directories found (use '-C all' to force check all possible dirs). CGI tests skipped.
++ [999996] /robots.txt: contains 1 entry which should be manually viewed. See: https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt
++ [013587] /: Suggested security header missing: permissions-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy
++ [001535] /.psql_history: This might be interesting.
++ [001675] /ftp/: This might be interesting.
++ [001811] /public/: This might be interesting.
++ [002739] /.htpasswd: Contains authorization information.
++ [002743] /.bash_history: A user's home directory may be set to the web root, the shell history was retrieved. This should not be accessible via the web.
++ [002748] /.mysql_history: Database SQL?.
++ [002756] /.sh_history: A user's home directory may be set to the web root, the shell history was retrieved. This should not be accessible via the web.
++ ERROR: *** Error limit (20) reached for host, giving up. Last error: opening stream: can't connect (timeout): Transport endpoint is not connected. ***
++ ERROR: *** Consider using mitmproxy to avoid TLS fingerprinting. ***
+- STATUS: Completed 3920 requests (~54% complete, ~6.6 minutes left): currently in plugin 'Nikto Tests'
+- STATUS: Running average: Not enough data.
++ Scan terminated: 20 errors and 10 items reported on the remote host
++ End Time:           2026-06-04 16:23:22 (GMT5) (465 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
